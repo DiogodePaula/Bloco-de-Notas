@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css2/blocoNotas.css">
+    <title>Bloco de Notas</title>
+</head>
+<body>
+    <h1 class="titulo"> BLOCO DE NOTAS </h1>
+    <form>       
+        
+        <div class="inputPai">
+            <input class="inputFilho" type="text" placeholder="Titulo" id="txtTitulo">
+            <br/> <br/>
+            <textarea class="inputFilho-conteudo" placeholder="Conteúdo" type="text" style="resize: none" wrap="hard" rows="5" cols="10" id="txtConteudo" > </textarea>          
+            <br/> <br/>
+            <input class="inputFilho" type="date" placeholder="Data" id="txtData">
+            <br> <br/>
+            <input class="inputFilho" type="time" placeholder="Hora" id="txtHora"> 
+        </div>                         
+        <br/>
+        <br/>
+        <input class="inputFilhoBotao" type="button" value="Adicionar a Lista" id="btnAdicionar"> 
+  
+        <input class="inputFilhoBotao" type="reset" value="Limpar" id="limpar">     
+         
+        <input class="inputFilhoBotao" type="button" value="Quantidade de itens:" id="btnContar">    
+        <label id="divFilhoContador"></label>        
+    </form>
+        <br/>     
+        <br/> 
+        <div id="divPai"></div>
+        
+
+    <script type="text/javaScript" src="JS/blocoNotas.js"></script>   
+</body>
+</html>
