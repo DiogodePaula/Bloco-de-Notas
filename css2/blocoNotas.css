@@ -38,7 +38,7 @@ form{
 
 .inputFilho-conteudo{
     font-size: 20px;
-    width: 19.5%;
+    width: 19%;
     height: 100px;
     border: solid 2px black;
     border-radius: 10px;
@@ -74,12 +74,11 @@ form{
     border: solid 5px black;
     border-radius: 20px;
     color: rgb(255, 255, 255);
-    background-image: url(../img/Dark\ Star\ Thresh.jpg);
+    background-image: url(../img/league_of_legends__dark_star_jarvan_iv_wallpaper_by_mr_booker_dc35yie-fullview.jpg);
     background-size: cover;
-    background-position: right 35%;
-    
+    background-position: center;  
 }
 
-#divPai{
-  
+.contador{
+    background-color: ivory;
 }

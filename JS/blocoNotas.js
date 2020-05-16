@@ -17,7 +17,7 @@ class BlocoDeNotas{
 
     adicionar(){
         const lista = [];
-
+        
         const blocoNotas = {
             titulo: this.titulo.value,
             conteudo: this.conteudo.value,
@@ -45,11 +45,7 @@ class BlocoDeNotas{
             </label>
             `
         }
-        contar();
-    }
-
-    contar(){
-        document.getElementById("divFilhoContador").innerHTML = `${lista[i].length}`
+       
     }
 
 }
