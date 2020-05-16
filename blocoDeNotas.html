@@ -8,27 +8,26 @@
     <title>Bloco de Notas</title>
 </head>
 <body>
-    <h1 class="titulo"> BLOCO DE NOTAS </h1>
-    <form>       
-        
+    <h1 class="titulo">************ BLOCO DE NOTAS ************ </h1>
+    <form>           
         <div class="inputPai">
             <input class="inputFilho" type="text" placeholder="Titulo" id="txtTitulo">
             <br/> <br/>
             <textarea class="inputFilho-conteudo" placeholder="Conteúdo" type="text" style="resize: none" wrap="hard" rows="5" cols="10" id="txtConteudo" > </textarea>          
             <br/> <br/>
-            <input class="inputFilho" type="date" placeholder="Data" id="txtData">
+            <input class="inputDataTime" type="date" placeholder="Data" id="txtData">
             <br> <br/>
-            <input class="inputFilho" type="time" placeholder="Hora" id="txtHora"> 
+            <input class="inputDataTime" type="time" placeholder="Hora" id="txtHora"> 
         </div>                         
         <br/>
         <br/>
         <input class="inputFilhoBotao" type="button" value="Adicionar a Lista" id="btnAdicionar"> 
-  
         <input class="inputFilhoBotao" type="reset" value="Limpar" id="limpar">     
-         
-        <input class="inputFilhoBotao" type="button" value="Quantidade de itens:" id="btnContar">    
-        <label id="divFilhoContador"></label>        
+        <input class="inputFilhoBotao" type="button" value="Quantidade de itens:" id="btnContar">              
     </form>
+        <br/>     
+        <br/>
+        <label id="divFilhoContador"></label> 
         <br/>     
         <br/> 
         <div id="divPai"></div>

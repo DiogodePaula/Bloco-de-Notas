@@ -1,3 +1,5 @@
+const lista = [];
+
 class BlocoDeNotas{
     constructor(){
         
@@ -16,7 +18,7 @@ class BlocoDeNotas{
     }
 
     adicionar(){
-        const lista = [];
+        document.getElementById("divPai").innerHTML = "";
         
         const blocoNotas = {
             titulo: this.titulo.value,
@@ -25,7 +27,11 @@ class BlocoDeNotas{
             hora: this.hora.value
         }
         
-        lista.push(blocoNotas);
+        if(blocoNotas.titulo && blocoNotas.conteudo && blocoNotas.data && blocoNotas.hora){
+            lista.push(blocoNotas); 
+        } else {
+            alert("Preencha todos os campos!");
+        } 
         console.log(lista);
 
         for(let i = 0; i < lista.length; i++){
@@ -46,6 +52,15 @@ class BlocoDeNotas{
             `
         }
        
+    }
+
+    contar(){
+
+        document.getElementById("divFilhoContador").innerHTML = `
+        <label class="contador">
+        Quantidade de Notas ${lista.length}
+        </label>
+        `
     }
 
 }
