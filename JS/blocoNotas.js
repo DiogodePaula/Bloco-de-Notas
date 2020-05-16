@@ -1,8 +1,7 @@
 const lista = [];
 
 class BlocoDeNotas{
-    constructor(){
-        
+    constructor(){     
         this.titulo = document.getElementById("txtTitulo");
         this.conteudo = document.getElementById("txtConteudo");
         this.data = document.getElementById("txtData");
